@@ -78,7 +78,7 @@ function App() {
               <p><strong>Calorias Totais:</strong> {alim.calorias}</p>
               <h6><strong>Data de Cadastro:</strong> {alim.data_cadastro}</h6>
               <button className='excluir-botao' onClick={()=>{handleExcluir(alim.id)}}>Excluir</button>
-              <button ><Link className='Link-botao' to={`/alterar-perfume/${alim.id}`}>Alterar</Link></button>
+              <button ><Link className='Link-botao' to={`/alterar-alimento/${alim.id}`}>Alterar</Link></button>
             </div>
           )
         })}    
