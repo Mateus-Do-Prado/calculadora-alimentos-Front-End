@@ -3,41 +3,46 @@ import { Link } from 'react-router-dom'
 
 import './Home.css'
 // Definindo o tipo para Perfumes
-type PerfumeType = {
+type AlimentosType = {
   id:number,
   nome:string,
-  marca:string,
-  fragrancia:string,
-  volume:string,
-  preco:string,
+  categoria:string,
+  calorias:string,
+  proteinas:string,
+  carboidratos:string,
+  gorduras:string,
+  peso:string,
+  data_cadastro:string,
   imagem:string
+
+ 
 }
 
 
 
 function App() {
-  const [perfumes, setPerfumes] = useState<PerfumeType[]>([])
+  const [alimentos, setAlimentos] = useState<AlimentosType[]>([])
 
   //useEffect(O QUe fazer, Quando Fazer)
    // useEffect para buscar perfumes
   useEffect(()=>{
-    fetch("https://one022b-perfumaria.onrender.com/perfumes")
+    fetch("https://calculadora-alimentos-back-end.onrender.com/alimentos")
     .then(resposta=>resposta.json())
-    .then(dados=>setPerfumes(dados))
+    .then(dados=>setAlimentos(dados))
   },[])
 
   
   function handleExcluir(id:number){
-    fetch(`https://one022b-perfumaria.onrender.com/perfumes/${id}`,{
+    fetch(`https://calculadora-alimentos-back-end.onrender.com/alimentos/${id}`,{
       method:"DELETE"
     })
     .then(resposta=>{
       if(resposta.status==200){
-        alert("Perfume Excluído com sucesso")
+        alert("Alimento Excluído com sucesso")
         window.location.reload()
       }
       else{
-        alert("Erro ao excluir perfume")
+        alert("Erro ao excluir um alimento...")
       }
     })
   }
@@ -48,8 +53,7 @@ function App() {
       <div className="cabeçalho-app">
           <ul className='menu-app'>
           <li><Link to={"/"}>Início</Link></li>
-          <li><Link to={"/lista-cliente"}>Veja nossos clientes</Link></li>
-          <li><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></li>
+          <li><Link to={"/cadastro-alimentos"}>Cadastre um Alimento</Link></li>
           <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
           </ul>
         </div>
@@ -57,19 +61,24 @@ function App() {
   </header>
 
 
-  <h2 className='perfume-lista'> Todos os nossos perfumes:</h2>
-      <div className="container-perfumes">
+  <h2 className='lista-alimentos'> Todos os Alimentos Cadastrados:</h2>
+      <div className="container-alimentos">
         
-        {perfumes.map(perf=>{
+        {alimentos.map(alim=>{
           return(
-            <div key={perf.id} className="perfume-item">
-              <h1 className='perfume-nome'>{perf.nome}</h1>
-              <img className='imagem-perfume' src={perf.imagem} alt="Imagem de perfume" />
-              <p><strong>R$</strong>  {perf.preco}</p>
-              <p><strong>Volume:</strong> {perf.volume}</p>
-              <p><strong>Marca:</strong> {perf.marca}</p>
-              <button className='excluir-botao' onClick={()=>{handleExcluir(perf.id)}}>Excluir</button>
-              <button ><Link className='Link-botao' to={`/alterar-perfume/${perf.id}`}>Alterar</Link></button>
+            <div key={alim.id} className="alimento-item">
+              <h1 className='alimento-nome'>{alim.nome}</h1>
+              <img className='imagem-alimento' src={alim.imagem} alt="Imagem do alimento" />
+              <p><strong>Categoria:</strong>  {alim.categoria}</p>
+              <h4>Dados do Alimento</h4>
+              <p><strong>Proteinas:</strong> {alim.proteinas}</p>
+              <p><strong>Carboidratos:</strong> {alim.carboidratos}</p>
+              <p><strong>Gorduras Totais:</strong> {alim.gorduras}</p>
+              <p><strong>Peso do Alimento:</strong> {alim.peso}</p>
+              <p><strong>Calorias Totais:</strong> {alim.calorias}</p>
+              <h6><strong>Data de Cadastro:</strong> {alim.data_cadastro}</h6>
+              <button className='excluir-botao' onClick={()=>{handleExcluir(alim.id)}}>Excluir</button>
+              <button ><Link className='Link-botao' to={`/alterar-perfume/${alim.id}`}>Alterar</Link></button>
             </div>
           )
         })}    
