@@ -1,6 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './Home.tsx';
+import MenuLateral from './pages/header/MenuLateral.tsx';
 import './index.css';
 import {
   createBrowserRouter,
@@ -15,7 +16,7 @@ import AlterarCliente from './AlterarCliente.tsx';*/
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <><MenuLateral/><App /></>,
   }
 ]);
 

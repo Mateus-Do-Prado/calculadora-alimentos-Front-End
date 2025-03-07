@@ -49,16 +49,7 @@ function App() {
 
   return (
     <>  
-    <header>
-      <div className="cabeçalho-app">
-          <ul className='menu-app'>
-          <li><Link to={"/"}>Início</Link></li>
-          <li><Link to={"/cadastro-alimentos"}>Cadastre um Alimento</Link></li>
-          <li> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></li>
-          </ul>
-        </div>
-
-  </header>
+   
 
 
   <h2 className='lista-alimentos'> Todos os Alimentos Cadastrados:</h2>
