@@ -17,10 +17,10 @@ function MenuLateral() {
         <div>
             <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <a href="#" className="closebtn" onClick={closeMenu}>&times;</a>
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contato</a>
+                <a><Link to={"/"}>Início</Link></a>
+                <a><Link to={"/lista-cliente"}>Veja nossos clientes</Link></a>
+                <a><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></a>
+                <a> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></a>
             </div>
 
             <div className="main">
