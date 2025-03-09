@@ -8,28 +8,28 @@ font-family: "Lato", sans-serif;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -250px; /* Escondido inicialmente */
-    background-color: #111;
+    left: -250px; 
+    background-color: #FDFFFC;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
 }
 
 .menu.open {
-    left: 0; /* Mostra o menu quando aberto */
+    left: 0; 
 }
 
 .menu a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 20px;
+    color: #242424;
     display: block;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #f1f1f1;
+    color: #24242467;
 }
 
 .closebtn {
@@ -41,10 +41,9 @@ font-family: "Lato", sans-serif;
 }
 
 .openbtn {
-    font-size: 20px;
+    font-size: 40px;
     cursor: pointer;
-    background-color: #111;
-    color: white;
+    color: #F2BB05;
     border: none;
     padding: 10px 15px;
 }
@@ -59,3 +58,315 @@ font-family: "Lato", sans-serif;
     height: auto;
     margin-top: 0px;
 }
+
+
+
+.vector {
+    width: 1300px;
+    height: 624px;
+    position: relative;
+    background: #6B818C;
+  }
+  
+  .vector_01 {
+    width: 75px;
+    height: 83.33px;
+    left: 12.50px;
+    top: 8.33px;
+    position: absolute;
+    background: #E6E6E6;
+  }
+  
+  .vector_02 {
+    width: 41.67px;
+    height: 50px;
+    left: 29.17px;
+    top: 25px;
+    position: absolute;
+    background: #E6E6E6;
+  }
+  
+  .calculadora_span {
+    color: white;
+    font-size: 50px;
+    font-family: Sedan SC;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .calculadora {
+    position: relative;
+  }
+  
+  .vector_15 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: black;
+  }
+  
+  .vector_16 {
+    width: 40.62px;
+    height: 34.38px;
+    position: relative;
+    background: #1E1E1E;
+  }
+  
+  .dealiments_span {
+    color: #98473E;
+    font-size: 50px;
+    font-family: Kaisei HarunoUmi;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .de-aliment-s {
+    position: relative;
+  }
+  
+  .group {
+    width: 55.65px;
+    height: 54.11px;
+    position: relative;
+  }
+  
+  .vector_03 {
+    width: 3.08px;
+    height: 13.26px; 
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_04 {
+    width: 20.73px;
+    height: 36.23px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_05 {
+    width: 17.04px;
+    height: 15.29px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_06 {
+    width: 37.06px;
+    height: 46.69px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_07 {
+    width: 13.13px;
+    height: 18.89px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_08 {
+    width: 13.05px;
+    height: 18.85px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_09 {
+    width: 13.87px;
+    height: 13.88px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_10 {
+    width: 13.57px;
+    height: 10.30px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_11 {
+    width: 28.85px;
+    height: 20.04px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_12 {
+    width: 13.87px;
+    height: 13.88px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_13 {
+    width: 13.87px;
+    height: 13.88px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .vector_14 {
+    width: 12.29px;
+    height: 13.56px;
+    position: relative;
+    background: #98473E;
+  }
+  
+  .bxcalculator {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+  
+  .dashiconsadmin-users {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .famiconslog-out {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .healthiconsfruits-outline {
+    width: 74px;
+    height: 74px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .cabealho {
+    width: 1920px;
+    height: 171px;
+    position: relative;
+    background: #FDFFFC;
+    border-bottom: 5px #6B818C solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-flex;
+  }
+
+
+
+
+
+  /*-----------------------------------------*/
+
+
+.calculadora_span {
+    color: white;
+    font-size: 30px;
+    font-family: Sedan SC;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .calculadora {
+    left: 55.24px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  .dealiments_span {
+    color: #98473E;
+    font-size: 40px;
+    font-family: Kaisei HarunoUmi;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .de-aliment-s {
+    left: 55.24px;
+    top: 33px;
+    position: absolute;
+  }
+  
+  .button_01_span {
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 16px;
+    word-wrap: break-word;
+  }
+  
+  .button_01 {
+    position: relative;
+  }
+  
+  .button_03_span {
+    color: #F5F5F5;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 16px;
+    word-wrap: break-word;
+  }
+  
+  .button_03 {
+    position: relative;
+  }
+  
+  .logo {
+    width: 381px;
+    height: 91px;
+    left: 130px;
+    top: 40px;
+    position: absolute;
+  }
+  
+  .button {
+    padding: 8px;
+    left: 1114px;
+    top: 70px;
+    position: absolute;
+    background: #1E1E1E;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #2C2C2C solid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+  }
+  
+  .button_02 {
+    padding: 8px;
+    left: 1224px;
+    top: 70px;
+    position: absolute;
+    background: #EC221F;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px #C00F0C solid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+  }
+  
+  .cabecalho {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: margin-left .5s;
+    height: auto;
+    margin-top: 0px;
+    align-self: stretch;
+    height: 171px;
+    position: relative;
+    background: linear-gradient(90deg, #1D2326 16%, #718690 65%, #FDFFFC 99%);
+  }
+
