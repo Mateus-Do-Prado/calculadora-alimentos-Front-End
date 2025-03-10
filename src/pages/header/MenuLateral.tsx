@@ -20,9 +20,7 @@ function MenuLateral() {
 <div className={`menu ${isOpen ? 'open' : ''}`}>
                 <a href="#" className="closebtn" onClick={closeMenu}>&times;</a>
                 <a><Link to={"/"}>Início</Link></a>
-                <a><Link to={"/lista-cliente"}>Veja nossos clientes</Link></a>
-                <a><Link to={"/cadastro-perfume"}>Cadastre um perfume</Link></a>
-                <a> <Link to={"/cadastro-cliente"}>Cadastrar um cliente</Link></a>
+                <a><Link to={"/cadastro-cliente"}>Se Cadastre</Link></a>
             </div>
 
             <div className="main">
@@ -35,12 +33,10 @@ function MenuLateral() {
     <div className="calculadora"><span className="calculadora_span">Calculadora</span></div>
     <div className="de-aliment-s"><span className="dealiments_span">DE ALIMENTOS</span></div>
   </div>
-  <div data-size="Small" data-state="Hover" data-variant="Primary" className="button">
-    <div className="button_01"><span className="button_01_span">Sua Conta</span></div>
-  </div>
-  <div data-size="Small" data-state="Hover" data-variant="Primary" className="button_02">
-    <div className="button_03"><span className="button_03_span">Sair</span></div>
-  </div>
+  
+  <button ><Link className="button_01" to={`/cadastro-cliente`}>Sua Conta</Link></button>
+ 
+  
 </div>
         
  
